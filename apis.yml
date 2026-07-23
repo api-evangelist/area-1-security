@@ -1,8 +1,25 @@
 aid: area-1-security
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/area-1-security.png
 name: Area 1 Security
-description: 'Area 1 Security is a company surfaced as a portfolio company of cowboy-ventures, dcvc, kleiner-perkins
-  and added to the API Evangelist network as a stub for enrichment. Sector: security. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Area 1 Security was a cloud-native email security company that built preemptive
+  anti-phishing and business-email-compromise (BEC) protection, discovering and blocking phishing
+  campaigns before they reached inboxes. It could be deployed inline (MX/journaling) or via API
+  connectors to Microsoft 365 and Google Workspace. Cloudflare acquired Area 1 Security in February
+  2022 for approximately $162 million and folded the technology into its Zero Trust / Cloudflare One
+  platform, where it is now sold as Cloudflare Email Security. The independent area1security.com
+  developer surface has been retired and now redirects to Cloudflare; the product API and
+  documentation live under the Cloudflare developer platform.'
 url: https://raw.githubusercontent.com/api-evangelist/area-1-security/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Security
+- Email Security
+- Anti-Phishing
+- Business Email Compromise
+- Zero Trust
+- Cybersecurity
+- Cloudflare
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +49,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/area-1-security-domain-security.yml
 - type: Website
   url: https://www.area1security.com
+- type: Documentation
+  url: https://developers.cloudflare.com/cloudflare-one/email-security/
+  x-note: Product now sold as Cloudflare Email Security following the 2022 acquisition.
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
