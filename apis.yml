@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://www.area1security.com', status: 301, note: 'declared website redirects to https://www.cloudflare.com/sase/products/email-security/ — a different registrable domain (area1security.com -> cloudflare.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/area-1-security.png
 name: Area 1 Security
 description: 'Area 1 Security was a cloud-native email security company that built preemptive
